@@ -11,9 +11,9 @@ int main(){
         n=n/10;
     }
     if(sum==n){
-        cout<<"The number is armstrong";
+        cout<<"The number is new";
     }  
     else{
-        cout<<"The number is not armstrong";
+        cout<<"The number is not new";
     }
     }
