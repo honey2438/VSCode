@@ -10,7 +10,6 @@ void fib(int n){
         a=b;
         b=c;
     }
-    return;
 }
 
 int main(){

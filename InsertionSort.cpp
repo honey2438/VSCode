@@ -17,7 +17,7 @@ int main(){
             arr[j+1]=arr[j];
             j--;
         }
-         arr[j+1]=current;
+        arr[j+1]=current;
     }
     cout<<"The sorted array is ";
     for(int i=0;i<n;i++){
