@@ -16,4 +16,5 @@ int main(){
     else{
         cout<<"The number is not new";
     }
-    }
+    return 0;
+     }
