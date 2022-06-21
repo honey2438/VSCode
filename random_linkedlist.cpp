@@ -47,7 +47,11 @@ int main(){
     insertat(head,1);
     insertat(head,2);
     insertat(head,3);
+<<<<<<< HEAD
     display(head);
+=======
+    
+>>>>>>> VS-code/main
     node* newhead=reverse(head);
     display(newhead);
     
