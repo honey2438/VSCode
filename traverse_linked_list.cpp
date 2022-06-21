@@ -9,20 +9,10 @@ class node{
         next=NULL;
     }
 };
-void insertattail(node* &head,int val){
-    node* n=new node(val);
+int traverse(node* head){
     if(head==NULL){
-        head=n;
-        return;
+        cout<<"NULL";
     }
-    node* temp=head;
-    while(temp->next!=NULL){
-        temp=temp->next;
-    }
-    temp->next=n;
-    
-}
-void display(node* head){
     node* temp=head;
     while(temp!=NULL){
         cout<<temp->data<<"->";
@@ -31,10 +21,13 @@ void display(node* head){
     cout<<"NULL";
 }
 int main(){
-    node* head=NULL;
-    insertattail(head,1);
-    insertattail(head,2);
-    insertattail(head,3);
+    node* head=new node(1);
+    node* second=new node(2);
+    node* third=new node(3);
+    head->next=second;
+    second->next=third;
+    third->next=NULL;
+    traverse(head);
 
 return 0;
 }

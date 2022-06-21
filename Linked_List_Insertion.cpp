@@ -35,6 +35,7 @@ int main(){
     insertattail(head,1);
     insertattail(head,2);
     insertattail(head,3);
+    display(head);
 
 return 0;
 }
