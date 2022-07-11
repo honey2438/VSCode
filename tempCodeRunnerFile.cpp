@@ -1,40 +1,19 @@
-#include<bits/stdc++.h>
-using namespace std;
-class node{
-    public:
-    int data;
-    node* next;
-    node(int val){
-        data=val;
-        next=NULL;
+#include <bits/stdc++.h> 
+int fact(int n){
+int factorial=1;
+    if(n>0){
+        factorial=fact(n)*fact(n-1);
     }
-};
-void insertattail(node* &head,int val){
-    node* n=new node(val);
-    if(head==NULL){
-        head=n;
-        return;
-    }
-    node* temp=head;
-    while(temp->next!=NULL){
-        temp=temp->next;
-    }
-    temp->next=n;
-    
+    return factorial;
 }
-void display(node* head){
-    node* temp=head;
-    while(temp!=NULL){
-        cout<<temp->data<<"->";
-        temp=temp->next;
-    }
-    cout<<"NULL";
-}
-int main(){
-    node* head=NULL;
-    insertattail(head,1);
-    insertattail(head,2);
-    insertattail(head,3);
 
-return 0;
+vector<vector<long long int>> printPascal(int n) 
+{
+    vector<vector<long long int>> vect;
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<=i;j++){
+            vect[i][j]=fact(i)/(fact(i-j)*fact(j));
+        }
+    }
+    return vect;
 }
