@@ -1,23 +1,25 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int i,j,k,l,n,t;
-    cout<<"Enter the number ";
-    cin>>n;
-    for(i=1;i<=n;i++){
-        t=2;
-        for(j=1;j<=n-i;j++){
-            cout<<" ";
+    int n;
+     cout<<"Enter the value of n";
+     cin>>n;
+    for(int i=0;i<n;i++){
+        int k=1;
+        for(int j=0;j<n;j++){
+            if(j<n-i-1){
+                cout<<" ";
+            }
+            else{
+                cout<<k;
+            }
+            k--;
         }
-        for(k=i;k>=1;k--){
-
+        k+=2;
+        for(int l=0;l<=i;l++){
             cout<<k;
+            k++;
         }
-        for(l=1;l<i;l++){
-            cout<<t;
-            t++;
-        }
-        cout<<endl;
     }
     return 0;
 }
