@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 int sum(int n){
-    int temp=n*(n+1)/2;
-    return temp;
+    return n*(n+1)/2;
 }
 int main(){
     int n;
