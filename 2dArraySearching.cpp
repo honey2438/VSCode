@@ -5,6 +5,7 @@ int main(){
     cout<<"Enter the number of row and columns";
     cin>>n>>m;
     int arr[n][m];
+    cout<<"Enter the elements in the array";
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             cin>>arr[i][j];
